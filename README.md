@@ -6,9 +6,7 @@
 
 ## Источник
 
-**Хрусталева Е.Ю.** «Разработка сложных отчётов в „1С:Предприятии 8“. Система компоновки данных», изд. 2.
-
-PDF (опционально): https://disk.yandex.ru/i/mv-JEzR4inD25A
+**Хрусталева Е.Ю.** «Разработка сложных отчётов в „1С:Предприятии 8“. Система компоновки данных», изд. 2 (1С-Паблишинг).
 
 ## Установка
 
@@ -29,16 +27,6 @@ cd cursor-1c-khrustaleva-skd
 ```
 
 Устанавливает в `~/.cursor/skills/khrustaleva-skd-queries/` и `~/.cursor/rules/khrustaleva-skd-queries.mdc`.
-
-### PDF на диск (опционально)
-
-```powershell
-.\skills\khrustaleva-skd-queries\scripts\download-book.ps1
-```
-
-```bash
-./skills/khrustaleva-skd-queries/scripts/download-book.sh
-```
 
 ## Содержание справочника
 
