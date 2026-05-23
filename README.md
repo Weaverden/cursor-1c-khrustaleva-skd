@@ -15,7 +15,7 @@ PDF (опционально): https://disk.yandex.ru/i/mv-JEzR4inD25A
 ### Windows
 
 ```powershell
-git clone https://github.com/<ваш-логин>/cursor-1c-khrustaleva-skd.git
+git clone https://github.com/Weaverden/cursor-1c-khrustaleva-skd.git
 cd cursor-1c-khrustaleva-skd
 .\install.ps1 -Global
 ```
@@ -23,7 +23,7 @@ cd cursor-1c-khrustaleva-skd
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/<ваш-логин>/cursor-1c-khrustaleva-skd.git
+git clone https://github.com/Weaverden/cursor-1c-khrustaleva-skd.git
 cd cursor-1c-khrustaleva-skd
 ./install.sh
 ```
