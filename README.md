@@ -44,7 +44,9 @@ cd cursor-1c-khrustaleva-queries
 
 ## Связь с cursor-1c-skills
 
-Этот репозиторий — **отдельный** пакет только по Хрусталевой/СКД. Полный набор скилов 1С: [cursor-1c-skills](https://github.com/Desko77/cursor-1c-skills) (там же есть скил `khrustaleva-1c-queries` как часть коллекции).
+Этот репозиторий — **отдельный** пакет по Хрусталевой (запросы + СКД). Полный набор скилов 1С: [cursor-1c-skills](https://github.com/Desko77/cursor-1c-skills) (скил `khrustaleva-1c-queries` дублируется в коллекции).
+
+> Раньше: `cursor-1c-khrustaleva-skd` / `khrustaleva-skd-queries` — GitHub перенаправляет на новые имена.
 
 ## Лицензия репозитория
 
