@@ -1,28 +1,28 @@
 #!/usr/bin/env bash
-# Add GitVerse remote and push (token via env, not stored in repo).
-# Usage: GITVERSE_TOKEN=your_token ./scripts/setup-gitverse-remote.sh
-
+# Configure GitVerse remote with saved token (.gitverse-token in repo root).
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+TOKEN_FILE="${ROOT}/.gitverse-token"
+if [[ -z "${GITVERSE_TOKEN:-}" ]] && [[ -f "$TOKEN_FILE" ]]; then
+  GITVERSE_TOKEN="$(tr -d '[:space:]' < "$TOKEN_FILE")"
+fi
 if [[ -z "${GITVERSE_TOKEN:-}" ]]; then
-  echo "Set GITVERSE_TOKEN (create at https://gitverse.ru → Settings → Tokens)"
+  echo "Create ${TOKEN_FILE} with your GitVerse token, or set GITVERSE_TOKEN"
   exit 1
 fi
 
 USER="${GITVERSE_USER:-Weaverden}"
 REPO="cursor-1c-khrustaleva-queries"
-URL="https://${USER}:${GITVERSE_TOKEN}@gitverse.ru/${USER}/${REPO}.git"
-CLEAN="https://gitverse.ru/${USER}/${REPO}.git"
+AUTH_URL="https://${USER}:${GITVERSE_TOKEN}@gitverse.ru/${USER}/${REPO}.git"
 
 git remote remove gitverse 2>/dev/null || true
-git remote add gitverse "$URL"
-git push -u gitverse main
-git remote set-url gitverse "$CLEAN"
-git remote set-url --push gitverse "$URL"
+git remote add gitverse "$AUTH_URL"
+git push -u gitverse main 2>/dev/null || git push gitverse main
 
-echo "Remote gitverse configured. Push URL uses token from env on next push if you:"
-echo "  export GITVERSE_TOKEN=..."
-echo "  git remote set-url --push gitverse \"https://${USER}:\${GITVERSE_TOKEN}@gitverse.ru/${USER}/${REPO}.git\""
-echo "Public: https://gitverse.ru/${USER}/${REPO}"
+printf "protocol=https\nhost=gitverse.ru\nusername=%s\npassword=%s\n" "$USER" "$GITVERSE_TOKEN" \
+  | git credential-osxkeychain store 2>/dev/null || true
+
+echo "gitverse remote OK → https://gitverse.ru/${USER}/${REPO}"
+echo "Token: ${TOKEN_FILE} (gitignored)"

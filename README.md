@@ -15,16 +15,14 @@
 | **GitHub** | https://github.com/Weaverden/cursor-1c-khrustaleva-queries |
 | **GitVerse** | https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries |
 
-Два remotes в git: `origin` (GitHub), `gitverse` (GitVerse). Пуш на обе площадки:
+Два remotes в git: `origin` (GitHub), `gitverse` (GitVerse).
 
 ```bash
 git push origin main
-GITVERSE_TOKEN=ваш_токен git push gitverse main
+git push gitverse main
 ```
 
-Или: `GITVERSE_TOKEN=... ./scripts/setup-gitverse-remote.sh`
-
-Токен GitVerse создаётся в настройках профиля на gitverse.ru. **Не коммитьте токен в репозиторий.**
+Токен GitVerse хранится локально в `.gitverse-token` (в `.gitignore`, не попадает в git). Первичная настройка: `./scripts/setup-gitverse-remote.sh`
 
 ## Установка
 
