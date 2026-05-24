@@ -8,28 +8,26 @@
 
 **Хрусталева Е.Ю.** «Разработка сложных отчётов в „1С:Предприятии 8“. Система компоновки данных», изд. 2 (1С-Паблишинг).
 
-## Репозитории
+## Репозиторий (Git)
 
-| Площадка | URL |
-|----------|-----|
-| **GitHub** | https://github.com/Weaverden/cursor-1c-khrustaleva-queries |
-| **GitVerse** | https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries |
-
-Два remotes в git: `origin` (GitHub), `gitverse` (GitVerse).
+**GitVerse:** https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries
 
 ```bash
-git push origin main
-git push gitverse main
+git clone https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries.git
+cd cursor-1c-khrustaleva-queries
+git push origin main   # если remote origin указывает на GitVerse
 ```
 
-Токен GitVerse хранится локально в `.gitverse-token` (в `.gitignore`, не попадает в git). Первичная настройка: `./scripts/setup-gitverse-remote.sh`
+Токен: файл `.gitverse-token` в корне клона (в `.gitignore`). Настройка remote: `./scripts/setup-gitverse-remote.sh`
+
+API: `https://api.gitverse.ru`, авторизация `Authorization: Bearer <token>`.
 
 ## Установка
 
 ### Windows
 
 ```powershell
-git clone https://github.com/Weaverden/cursor-1c-khrustaleva-queries.git
+git clone https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries.git
 cd cursor-1c-khrustaleva-queries
 .\install.ps1 -Global
 ```
@@ -37,7 +35,7 @@ cd cursor-1c-khrustaleva-queries
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/Weaverden/cursor-1c-khrustaleva-queries.git
+git clone https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries.git
 cd cursor-1c-khrustaleva-queries
 ./install.sh
 ```
@@ -60,9 +58,9 @@ cd cursor-1c-khrustaleva-queries
 
 ## Связь с cursor-1c-skills
 
-Этот репозиторий — **отдельный** пакет по Хрусталевой (запросы + СКД). Полный набор скилов 1С: [cursor-1c-skills](https://github.com/Desko77/cursor-1c-skills) (скил `khrustaleva-1c-queries` дублируется в коллекции).
+Отдельный пакет по Хрусталевой. Полный набор скилов 1С — репозиторий `cursor-1c-skills` (у вас может быть своё зеркало на GitVerse или другой хостинг).
 
-> Раньше: `cursor-1c-khrustaleva-skd` / `khrustaleva-skd-queries` — GitHub перенаправляет на новые имена.
+> Раньше: `cursor-1c-khrustaleva-skd`, скил `khrustaleva-skd-queries`.
 
 ## Лицензия репозитория
 

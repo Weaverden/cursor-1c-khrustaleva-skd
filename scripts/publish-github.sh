@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Create public GitHub repo and push (requires: gh auth login)
+# OPTIONAL: publish mirror to GitHub — use only when user explicitly asks for GitHub.
+# Primary host is GitVerse (see setup-gitverse-remote.sh).
 set -euo pipefail
 REPO_NAME="cursor-1c-khrustaleva-queries"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

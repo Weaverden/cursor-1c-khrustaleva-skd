@@ -33,7 +33,7 @@
 
 ## Синхронизация Mac ↔ Windows
 
-1. Храните репозиторий `cursor-1c-skills` в Git / облаке (GitHub, GitLab, OneDrive — как удобно).
+1. Храните репозиторий в Git (основной хостинг — **GitVerse**; см. README пакета).
 2. На **каждой** машине после `git pull`:
 
 ```powershell

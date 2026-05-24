@@ -17,6 +17,18 @@ alwaysApply: false
 
 # Язык запросов 1С и СКД (Хрусталева)
 
+## Git по умолчанию — GitVerse
+
+Если пользователь говорит «git», «репозиторий», «запушь», «клон», «pull» **без слова GitHub** — имеется в виду **GitVerse**:
+
+- Репозиторий пакета: https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries
+- Клон: `git clone https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries.git`
+- Токен: `.gitverse-token` (локально, не в git)
+
+**GitHub** — только если пользователь **явно** написал GitHub / github.com.
+
+---
+
 Справочник по книге Хрусталевой охватывает **и СКД, и язык запросов в целом** (модули, консоль, обработки, отчёты).
 
 ## Когда читать
