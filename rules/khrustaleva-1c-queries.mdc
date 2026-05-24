@@ -21,7 +21,7 @@ alwaysApply: false
 
 ## Когда читать
 
-| Задача | Файл в `~/.cursor/skills/khrustaleva-skd-queries/references/` |
+| Задача | Файл в `~/.cursor/skills/khrustaleva-1c-queries/references/` |
 |--------|------------------------------------------------------------------|
 | JOIN, LEFT, алиасы, ВТ, параметры, период | **`08-query-language-general.md`** |
 | Отчёт СКД, наборы данных | `01-architecture-skd.md` |

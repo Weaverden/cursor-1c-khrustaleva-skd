@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Create public GitHub repo and push (requires: gh auth login)
 set -euo pipefail
-REPO_NAME="cursor-1c-khrustaleva-skd"
+REPO_NAME="cursor-1c-khrustaleva-queries"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 

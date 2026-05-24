@@ -25,10 +25,10 @@ if ($ProjectDir) {
     $TargetBase = Join-Path $env:USERPROFILE ".cursor"
 }
 
-$skillSrc = Join-Path $ScriptDir "skills\khrustaleva-skd-queries"
-$skillDst = Join-Path $TargetBase "skills\khrustaleva-skd-queries"
-$ruleSrc  = Join-Path $ScriptDir "rules\khrustaleva-skd-queries.mdc"
-$ruleDst  = Join-Path $TargetBase "rules\khrustaleva-skd-queries.mdc"
+$skillSrc = Join-Path $ScriptDir "skills\khrustaleva-1c-queries"
+$skillDst = Join-Path $TargetBase "skills\khrustaleva-1c-queries"
+$ruleSrc  = Join-Path $ScriptDir "rules\khrustaleva-1c-queries.mdc"
+$ruleDst  = Join-Path $TargetBase "rules\khrustaleva-1c-queries.mdc"
 
 if (-not (Test-Path $skillSrc)) { throw "Skill not found: $skillSrc" }
 
@@ -39,7 +39,7 @@ if (Test-Path $skillDst) { Remove-Item $skillDst -Recurse -Force }
 Copy-Item $skillSrc $skillDst -Recurse -Force
 Copy-Item $ruleSrc $ruleDst -Force
 
-Write-Host "Installed khrustaleva-skd-queries" -ForegroundColor Green
+Write-Host "Installed khrustaleva-1c-queries" -ForegroundColor Green
 Write-Host "  Skill: $skillDst"
 Write-Host "  Rule:  $ruleDst"
-Write-Host "`nOptional PDF: .\skills\khrustaleva-skd-queries\scripts\download-book.ps1" -ForegroundColor Cyan
+Write-Host "`nOptional PDF: .\skills\khrustaleva-1c-queries\scripts\download-book.ps1" -ForegroundColor Cyan

@@ -14,12 +14,12 @@
 
 ```powershell
 # Windows (из корня cursor-1c-skills)
-.\skills\khrustaleva-skd-queries\scripts\download-book.ps1
+.\skills\khrustaleva-1c-queries\scripts\download-book.ps1
 ```
 
 ```bash
 # macOS / Linux
-./skills/khrustaleva-skd-queries/scripts/download-book.sh
+./skills/khrustaleva-1c-queries/scripts/download-book.sh
 ```
 
 Куда сохраняется:
@@ -47,10 +47,10 @@ cd ~/cursor-1c-skills
 powershell.exe -NoProfile -File install.ps1 -Global  # если есть PowerShell
 # либо:
 mkdir -p ~/.cursor/skills ~/.cursor/rules
-cp -r skills/khrustaleva-skd-queries ~/.cursor/skills/
-cp rules/khrustaleva-skd-queries.mdc ~/.cursor/rules/
+cp -r skills/khrustaleva-1c-queries ~/.cursor/skills/
+cp rules/khrustaleva-1c-queries.mdc ~/.cursor/rules/
 ```
 
 3. Опционально на обеих машинах: `download-book.ps1` / `download-book.sh`.
 
-Выжимки в `~/.cursor/skills/khrustaleva-skd-queries/references/` обновляются при каждом `install.ps1 -Global`.
+Выжимки в `~/.cursor/skills/khrustaleva-1c-queries/references/` обновляются при каждом `install.ps1 -Global`.

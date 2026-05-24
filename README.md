@@ -1,4 +1,4 @@
-# cursor-1c-khrustaleva-skd
+# cursor-1c-khrustaleva-queries
 
 База знаний для **Cursor IDE** по книге Хрусталевой: **язык запросов 1С в целом** (соединения, виртуальные таблицы, параметры, остатки) **и** отчёты на **СКД**.
 
@@ -13,20 +13,20 @@
 ### Windows
 
 ```powershell
-git clone https://github.com/Weaverden/cursor-1c-khrustaleva-skd.git
-cd cursor-1c-khrustaleva-skd
+git clone https://github.com/Weaverden/cursor-1c-khrustaleva-queries.git
+cd cursor-1c-khrustaleva-queries
 .\install.ps1 -Global
 ```
 
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/Weaverden/cursor-1c-khrustaleva-skd.git
-cd cursor-1c-khrustaleva-skd
+git clone https://github.com/Weaverden/cursor-1c-khrustaleva-queries.git
+cd cursor-1c-khrustaleva-queries
 ./install.sh
 ```
 
-Устанавливает в `~/.cursor/skills/khrustaleva-skd-queries/` и `~/.cursor/rules/khrustaleva-skd-queries.mdc`.
+Устанавливает в `~/.cursor/skills/khrustaleva-1c-queries/` и `~/.cursor/rules/khrustaleva-1c-queries.mdc`.
 
 ## Содержание справочника
 
@@ -44,7 +44,7 @@ cd cursor-1c-khrustaleva-skd
 
 ## Связь с cursor-1c-skills
 
-Этот репозиторий — **отдельный** пакет только по Хрусталевой/СКД. Полный набор скилов 1С: [cursor-1c-skills](https://github.com/Desko77/cursor-1c-skills) (там же есть скил `khrustaleva-skd-queries` как часть коллекции).
+Этот репозиторий — **отдельный** пакет только по Хрусталевой/СКД. Полный набор скилов 1С: [cursor-1c-skills](https://github.com/Desko77/cursor-1c-skills) (там же есть скил `khrustaleva-1c-queries` как часть коллекции).
 
 ## Лицензия репозитория
 
