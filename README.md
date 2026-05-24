@@ -8,6 +8,24 @@
 
 **Хрусталева Е.Ю.** «Разработка сложных отчётов в „1С:Предприятии 8“. Система компоновки данных», изд. 2 (1С-Паблишинг).
 
+## Репозитории
+
+| Площадка | URL |
+|----------|-----|
+| **GitHub** | https://github.com/Weaverden/cursor-1c-khrustaleva-queries |
+| **GitVerse** | https://gitverse.ru/Weaverden/cursor-1c-khrustaleva-queries |
+
+Два remotes в git: `origin` (GitHub), `gitverse` (GitVerse). Пуш на обе площадки:
+
+```bash
+git push origin main
+GITVERSE_TOKEN=ваш_токен git push gitverse main
+```
+
+Или: `GITVERSE_TOKEN=... ./scripts/setup-gitverse-remote.sh`
+
+Токен GitVerse создаётся в настройках профиля на gitverse.ru. **Не коммитьте токен в репозиторий.**
+
 ## Установка
 
 ### Windows
